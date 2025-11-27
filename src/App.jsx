@@ -1,3 +1,7 @@
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+
 import { useAllProducts } from "./hooks/useProductQuery";
 import { Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar";

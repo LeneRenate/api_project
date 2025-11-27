@@ -5,7 +5,7 @@ import "./styles/global.css";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./routes/index.jsx";
-import { CartProvider } from "./context/CartContext.jsx";
+import CartProvider from "./context/CartContext.jsx";
 
 const queryClient = new QueryClient();
 

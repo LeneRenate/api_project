@@ -8,4 +8,12 @@ const useAllProducts = () => {
   });
 };
 
-export { useAllProducts };
+const useProductDetails = (id) => {
+  return useQuery({
+    queryKey: ["productDetails", id],
+    queryFn: () => fetchProductDetails(id),
+    enabled: !!id,
+  });
+};
+
+export { useAllProducts, useProductDetails };
